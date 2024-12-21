@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Home of House Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The House</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner"> 
+        <img src="images/banner.jpg" alt="Event Banner" class="banner-image"> 
+        <div class="banner-text"> 
+            <h2>Upcoming Events</h2> 
+        </div> 
+    </section>
+   
+   <main> 
+    <div class="countdown">
+        <h2>Countdown To The Next Event:</h2>
+        <div id="timer">
+            <span id="days">0</span> Days 
+            <span id="hours">0</span> Hours 
+            <span id="minutes">0</span> Minutes 
+            <span id="seconds">0</span> Seconds
+        </div>
+    </div>
+
+    <section class="events"> 
+            <a href="https://www.tomorrowland.com/home/" target="_blank" class="event-card"> 
+                <img src="images/tomorrowland.jpg" alt="Tomorrowland" class="event-image"> 
+                <div class="event-info"> 
+                    <h3>Tomorrowland</h3> 
+                    <p>Date: July 2025</p> 
+                    <p>Location: Boom, Belgium</p> 
+                </div> 
+            </a> 
+            <a href="https://www.glastonburyfestivals.co.uk" target="_blank" class="event-card"> 
+                <img src="images/glastonbury.jpg" alt="Glastonbury" class="event-image"> 
+                <div class="event-info"> 
+                    <h3>Glastonbury</h3> 
+                    <p>Date: June 2025</p> 
+                    <p>Location: Somerset, UK</p> 
+                </div> 
+            </a> 
+            <a href="https://www.coachella.com/" target="_blank" class="event-card"> 
+                <img src="images/coachella.jpg" alt="Coachella" class="event-image"> 
+                <div class="event-info"> 
+                    <h3>Coachella</h3> 
+                    <p>Date: April 2025</p> 
+                    <p>Location: Indio, CA</p> 
+                </div> 
+            </a> 
+        </section>
+        
+        <section class="event-videos"> 
+            <h2>Highlights</h2> 
+            <div class="video-grid"> 
+                <div class="video-item"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jb93suPVtSg?si=nacZKO_bhUl2spsW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Tomorrowland 2017</p> 
+                </div> 
+                <div class="video-item"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/w2oGFEsaG5c?si=L-yv-Glyur7gtmfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Glastonbury 2022</p> 
+                </div> 
+                <div class="video-item"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/oUbpmjOgmmU?si=fCc0E28er1BI94DU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+                        <p>Coachella 2019</p> 
+                    </div> 
+                </div> 
+            </section>
+
+        <section class="weathers">
+            <h2>Come Prepared!</h2>
+            <p>If you plan on attending any of these festivals, make sure to check below for live updates on the weather!</p>
+            <div class="weather">
+                <h3>Tomorrowland | Boom, Belgium</h3>
+                <p id="api-data-tomorrowland"></p>
+            </div>
+            <div class="weather">
+                <h3>Glastonbury | Somerset, UK</h3>
+                <p id="api-data-glastonbury"></p>
+            </div>
+            <div class="weather">
+                <h3>Coachella | Indio, California</h3>
+                <p id="api-data-coachella"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Danny Morgan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

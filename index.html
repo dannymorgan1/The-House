@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Home of House Music</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>The House</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="events.html">Events</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2><b>Dive into the world of house music and discover your inner groove. Click on an artist below to learn more!</b></h2>
+        </section>
+        
+        <section class="slider"> 
+            <div class="slides"> 
+                <div class="slide">
+                    <img src="images/slide1.jpg" alt="Slide 1">
+                    <div class="overlay-text">
+                        <h3>For the love of the House.</h3>
+                    </div> 
+                </div>
+                <div class="slide">
+                    <img src="images/slide2.jpg" alt="Slide 2">
+                    <div class="overlay-text">
+                        <h3>For the love of the Beats.</h3>
+                    </div> 
+                </div>
+                <div class="slide">
+                    <img src="images/slide3.jpg" alt="Slide 3">
+                    <div class="overlay-text">
+                        <h3>For the love of the Music.</h3>
+                    </div> 
+            </div> 
+        </section>
+
+        <section class="gallery"> 
+            <h2>Artist Gallery</h2> 
+            <div class="image-container"> 
+                <figure> 
+                    <a href="artists.html#chris-stussy"> 
+                        <img src="images/chris_stussy.jpg" alt="Chris Stussy"> 
+                        <figcaption>Chris Stussy &#127475;&#127473;</figcaption> 
+                    </a> 
+                </figure> 
+                <figure> 
+                    <a href="artists.html#mall-grab"> 
+                        <img src="images/mall_grab.jpg" alt="Mall Grab"> 
+                        <figcaption>Mall Grab &#127462;&#127482;</figcaption> 
+                    </a> 
+                </figure> 
+                <figure> 
+                    <a href="artists.html#kettama"> 
+                        <img src="images/kettama.jpg" alt="Kettama"> 
+                        <figcaption>Kettama &#x1f1ee;&#x1f1ea;</figcaption> 
+                    </a> 
+                </figure> 
+            </div> 
+        </section>
+
+        <section class="schedule">
+            <h2><a href="events.html" class="clickable-heading">Upcoming Events</a></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>April 2025</td>
+                        <td>Coachella</td>
+                        <td>Indio, CA</td>
+                    </tr>
+                    <tr>
+                        <td>June 2025</td>
+                        <td>Glastonbury Festival</td>
+                        <td>Somerset, UK</td>
+                    </tr>
+                    <tr>
+                        <td>July 2025</td>
+                        <td>Tomorrowland</td>
+                        <td>Boom, Belgium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
+    <section class="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+             <form id="signup-form"> 
+                <label for="email">Please enter your email:</label> 
+                <input type="email" id="email" name="email" required> 
+                <button type="submit">Sign Up</button> 
+            </form> 
+            <p id="response-message"></p> 
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Danny Morgan. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
